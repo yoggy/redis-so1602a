@@ -39,14 +39,14 @@ OLED Character Display Module Pin Assign
     10～14 NC
        ※ short (1,3,4) and (8,9)...
 
-![SO1602AWYB short (1,3,4) and (8.9)](img3.jpg)
+![SO1602AWYB short (1,3,4) and (8.9)](img2.jpg)
 
-![SO1602AWYB pin assign](img4.jpg)
+![SO1602AWYB pin assign](img3.jpg)
 
 Raspberry Pi I2C Pin Assign
 ----
 
-![Raspberry Pi I2C Pin Assign](img2.jpg)
+![Raspberry Pi I2C Pin Assign](img4.jpg)
 
 
 Copyright and license
