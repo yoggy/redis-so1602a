@@ -2,7 +2,7 @@ redis-so1602a.rb
 ====
 A display driver program for SO1602A and Rapsberry Pi
 
-![img1.png](img1.png)
+![img1.jpg](img1.jpg)
 
 How to setup
 ----
