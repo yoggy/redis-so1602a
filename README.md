@@ -1,6 +1,6 @@
 redis-so1602a.rb
 ====
-Display driver program for SO1602A and Rapsberry Pi
+A display driver program for SO1602A and Rapsberry Pi
 
 ![img1.png](img1.png)
 
