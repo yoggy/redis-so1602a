@@ -1,0 +1,32 @@
+;
+; redis-so1602a.conf - for supervisord configuration file
+;
+; install
+;     $ sudo apt-get install supervisor
+;     $ pwd
+;       (check your scrpt path...)
+;     $ sudo cp redis-so1602a.conf.sample /etc/supervisor/conf.d/redis-so1602a.conf
+;     $ sudo vi /etc/supervisor/conf.d/redis-so1602a.conf
+;       (fix path, etc...)
+;     $ sudo supervisorctl reread
+;     $ sudo supervisorctl add redis-so1602a
+;     $ sudo supervisorctl status
+;     redis-so1602a        RUNNING    pid 8192, uptime 0:00:30
+;
+; see also
+;     Supervisor: A Process Control System
+;     http://supervisord.org/
+;
+[program:redis-so1602a]
+command                 = /usr/bin/ruby ./redis-so1602a.rb
+directory               = /home/pi/work/redis-so1602a/
+user                    = pi
+numprocs                = 1
+autostart               = true
+autorestart             = true
+redirect_stderr         = true
+stdout_logfile          = /home/pi/work/redis-so1602a/log.txt
+startsecs               = 1
+startretries            = 10
+stdout_logfile_maxbytes = 1MB
+stdout_logfile_backups  = 1
